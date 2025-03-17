@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
     <nav class="navbar">
         <p class="navbar__logo">LOGO</p>
         <div class="navbar__menu">
@@ -33,5 +34,41 @@
             <img class="img__doctor" src="/images/covid-image.png" alt="doctor">
         </div>
     </main>
+    <div class="statistics">
+        <p class="statistics__topic">STATISTICS</p>
+        <div class="statistics__grid">
+            <div class="grid__selector">
+                <select name="country" id="country__select" >
+                    <option value="canada">🇨🇦 &nbsp &nbsp Canada</option>
+                    <option value="america">🇺🇸 &nbsp &nbsp USA</option>
+                </select>
+                <select aria-hidden="true" name="date" id="date__select">
+                    <option value="">Date</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+                <button class="selector__btn">Filter</button>
+            </div>
+            <div class="grid__today-statistics">
+                <p>TODAY STATISTICS</p>
+                <div class="today-statistics__info">
+                    <div class="today-statistics__info__1"><p class="--darkblue">2,464</p><p class="--green">Total Cases</p></div>
+                    <div class="today-statistics__info__2"><p class="--green">981</p><p class="--green">Recovered</p></div>
+                    <div class="today-statistics__info__3"><p class="--darkblue">1,643</p><p class="--green">Infected Now</p></div>
+                    <div class="today-statistics__info__4"><p class="--gold">542</p><p class="--green">Deaths</p></div>
+                </div>
+            </div>
+            <div class="grid__info">
+                <div><p class="--blue">14 </p><p  class="--green">Ranks</p></div>
+                <div><p class="--blue">12,456 </p><p class="--green">Total Cases</p></div>
+                <div><p class="--gold">836 </p><p class="--green">Death</p></div>
+                <div><p class="--blue">12,456 </p><p class="--green">Recovered</p></div>
+                <div><p class="--blue">12,465 </p><p class="--green">Recovered</p></div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 </html>
