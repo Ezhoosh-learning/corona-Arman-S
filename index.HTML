@@ -1,74 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>corona</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-    <nav class="navbar">
+      <nav class="navbar">
         <p class="navbar__logo">LOGO</p>
         <div class="navbar__menu">
-            <div>Home</div>
-            <div>Servies</div>
-            <div>Question & Answers</div>
-            <div>About us</div>
+          <div>Home</div>
+          <div>Servies</div>
+          <div>Question & Answers</div>
+          <div>About us</div>
         </div>
         <button class="navbar__btn">Get start</button>
-    </nav>
-    <main class="main">
+      </nav>
+      <main class="main">
         <div class="main__text">
-            <div class="text__top">
-                <p class="top__corona">Corona </p>&nbsp;
-                <p class="top__head"> virus statistics</p>
-            </div>
-            <p class="text__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quod velit delectus odio autem saepe tempore. </p>
-            <div class="text__btns">
-                <button class="btns__one">Our service</button>
-                <button class="btns__two">Support</button>
-            </div>
+          <div class="text__top">
+            <p class="top__corona">Corona</p>
+            &nbsp;
+            <p class="top__head">virus statistics</p>
+          </div>
+          <p class="text__info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quod
+            velit delectus odio autem saepe tempore.
+          </p>
+          <div class="text__btns">
+            <button class="btns__one">Our service</button>
+            <button class="btns__two">Support</button>
+          </div>
         </div>
         <div class="main__img">
-            <img class="img__doctor" src="/images/covid-image.png" alt="doctor">
+          <img class="img__doctor" src="/images/covid-image.png" alt="doctor" />
         </div>
-    </main>
-    <div class="statistics">
+      </main>
+      <div class="statistics">
         <p class="statistics__topic">STATISTICS</p>
         <div class="statistics__grid">
-            <div class="grid__selector">
-                <select name="country" id="country__select" >
-                    <option value="canada">🇨🇦 &nbsp &nbsp Canada</option>
-                    <option value="america">🇺🇸 &nbsp &nbsp USA</option>
-                </select>
-                <select aria-hidden="true" name="date" id="date__select">
-                    <option value="">Date</option>
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2021</option>
-                    <option value="2020">2020</option>
-                </select>
-                <button class="selector__btn">Filter</button>
+          <div class="grid__selector">
+            <select name="country" id="country__select">
+              <option value="canada">🇨🇦 &nbsp &nbsp Canada</option>
+              <option value="america">🇺🇸 &nbsp &nbsp USA</option>
+            </select>
+            <select aria-hidden="true" name="date" id="date__select">
+              <option value="">Date</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+            </select>
+            <button class="selector__btn">Filter</button>
+          </div>
+          <div class="grid__today-statistics">
+            <p>TODAY STATISTICS</p>
+            <div class="today-statistics__info">
+              <div class="today-statistics__info__1">
+                <p class="--darkblue">2,464</p>
+                <p class="--green">Total Cases</p>
+              </div>
+              <div class="today-statistics__info__2">
+                <p class="--green">981</p>
+                <p class="--green">Recovered</p>
+              </div>
+              <div class="today-statistics__info__3">
+                <p class="--darkblue">1,643</p>
+                <p class="--green">Infected Now</p>
+              </div>
+              <div class="today-statistics__info__4">
+                <p class="--gold">542</p>
+                <p class="--green">Deaths</p>
+              </div>
             </div>
-            <div class="grid__today-statistics">
-                <p>TODAY STATISTICS</p>
-                <div class="today-statistics__info">
-                    <div class="today-statistics__info__1"><p class="--darkblue">2,464</p><p class="--green">Total Cases</p></div>
-                    <div class="today-statistics__info__2"><p class="--green">981</p><p class="--green">Recovered</p></div>
-                    <div class="today-statistics__info__3"><p class="--darkblue">1,643</p><p class="--green">Infected Now</p></div>
-                    <div class="today-statistics__info__4"><p class="--gold">542</p><p class="--green">Deaths</p></div>
-                </div>
+          </div>
+          <div class="grid__info">
+            <div>
+              <p class="--blue">14</p>
+              <p class="--green">Ranks</p>
             </div>
-            <div class="grid__info">
-                <div><p class="--blue">14 </p><p  class="--green">Ranks</p></div>
-                <div><p class="--blue">12,456 </p><p class="--green">Total Cases</p></div>
-                <div><p class="--gold">836 </p><p class="--green">Death</p></div>
-                <div><p class="--blue">12,456 </p><p class="--green">Recovered</p></div>
-                <div><p class="--blue">12,465 </p><p class="--green">Recovered</p></div>
+            <div>
+              <p class="--blue">12,456</p>
+              <p class="--green">Total Cases</p>
             </div>
+            <div>
+              <p class="--gold">836</p>
+              <p class="--green">Death</p>
+            </div>
+            <div>
+              <p class="--blue">12,456</p>
+              <p class="--green">Recovered</p>
+            </div>
+            <div>
+              <p class="--blue">12,465</p>
+              <p class="--green">Recovered</p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="chart">
+        <p>CHART</p>
+
+        <div class="chart__data">
+          <div class="data__graph">
+            <p>TOTAL CASES</p>
+            <div>
+              <img src="images/Chart Title green.png" alt="" />
+            </div>
+          </div>
+          <div class="data__graph">
+            <p>TOTAL CASES</p>
+            <div>
+              <img src="images/Chart Title red.png" alt="" />
+            </div>
+          </div>
+          <div class="worldwide grid__today-statistics">
+            <p class="">WORLDWIDE STATISTICS</p>
+            <div class="today-statistics__info">
+              <div class="today-statistics__info__1">
+                <p class="--darkblue">2,464</p>
+                <p class="--green">Total Cases</p>
+              </div>
+              <div class="today-statistics__info__2">
+                <p class="--green">981</p>
+                <p class="--green">Recovered</p>
+              </div>
+              <div class="today-statistics__info__3">
+                <p class="--darkblue">1,643</p>
+                <p class="--green">Infected Now</p>
+              </div>
+              <div class="today-statistics__info__4">
+                <p class="--gold">542</p>
+                <p class="--green">Deaths</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="orders">
+        <div class="orders__head">
+            <p>Orders Country</p>
+            <button>Filter</button>
+        </div>
+        <div class="orders__main">
+            <table>
+                <tr class="table__head">
+                    <th style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=p9jKUHLk5ejE&format=png&color=000000"><p>&nbsp country</p></th>
+                    <th>Total Cases</th>
+                    <th>Death</th>
+                    <th>Recovered</th>
+                    <th style="padding-right: 50px;">RANK</th>
+                    <th >TRACKING</th>
+                    <th></th>
+                </tr>
+                <tr class="table__data">
+                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=aRiu1GGi6Aoe&format=png&color=000000"><p>&nbsp USA</p></td>
+                    <td>10,637,456</td>
+                    <td>2,767,658</td>
+                    <td>8,647,748</td>
+                    <td>1</td>
+                    <td>IN332942</td>
+                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
+                </tr>
+                <tr class="table__data">
+                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=Ej50Oe3crXwF&format=png&color=000000"><p>&nbsp China</p></td>
+                    <td>8,653,456</td>
+                    <td>2,343,876</td>
+                    <td>6,211,876</td>
+                    <td>2</td>
+                    <td>IN332942</td>
+                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
+                </tr>
+                <tr class="table__data">
+                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=esGVrxg9VCJ1&format=png&color=000000"><p>&nbsp India</p></td>
+                    <td>4,672,737</td>
+                    <td>1,735,335</td>
+                    <td>3,765,342</td>
+                    <td>3</td>
+                    <td>IN332942</td>
+                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
+                </tr>
+                <tr class="table__data">
+                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=zHmH8HpOmM90&format=png&color=000000"><p>&nbsp Brazil</p></td>
+                    <td>2,523,453</td>
+                    <td>1,345,435</td>
+                    <td>1,853,252</td>
+                    <td>4</td>
+                    <td>IN332942</td>
+                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
+                </tr>
+                <tr class="table__data">
+                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=aFEiFfDodGwe&format=png&color=000000"><p>&nbsp Argentina</p></td>
+                    <td>2,221,533</td>
+                    <td>1,235,533</td>
+                    <td>1,545,781</td>
+                    <td>5</td>
+                    <td>IN332942</td>
+                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
+                </tr>
+                <tr class="table__data">
+                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=-Drj05EcgTim&format=png&color=000000"><p>&nbsp Iran</p></td>
+                    <td>1,763,872</td>
+                    <td>1,129,871</td>
+                    <td>1,155,813</td>
+                    <td>6</td>
+                    <td>IN332942</td>
+                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
+                </tr>
+                <tr class="table__data">
+                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=cYRU7TBWwNVs&format=png&color=000000"><p>&nbsp Canada</p></td>
+                    <td>1,234,123</td>
+                    <td>1.110.785</td>
+                    <td>1,876,121</td>
+                    <td>7</td>
+                    <td>IN332942</td>
+                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
+                </tr>
+            </table>
+        </div>
+        <div class="orders__foot">
+            <button>See More</button>
+        </div>
+      </div>
     </div>
-    </div>
-</body>
+  </body>
 </html>
