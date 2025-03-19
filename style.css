@@ -84,7 +84,7 @@ body{
     color: #00E6B5;
 }
 .top__head{
-    color: #002B5A;
+    color: #003268;
 }
 .text__info{
     color: #979797;
@@ -194,7 +194,7 @@ body{
     padding: 40px 20px 20px 90px;
 }
 .grid__today-statistics > p{
-    color: #002B5A;
+    color: #003268;
     font-size: 1em;
     font-weight: bold;
     border-bottom: #e2e2e2 solid 2px;
@@ -268,7 +268,7 @@ body{
     color: #1B87CA;
 }
 .--darkblue{
-    color:#002B5A;
+    color:#003268;
 }
 .chart{
     display: flex;
@@ -506,8 +506,8 @@ body{
     height: 100%;
     bottom: 0;
     z-index: 0;
-    background: rgb(0,0,0);
-    background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(80,80,80,0.5942752100840336) 32%, rgba(255,0,0,0) 100%);
+    background: rgb(25,25,25);
+    background: linear-gradient(360deg, rgba(25,25,25,1) 0%, rgba(80,80,80,0.5942752100840336) 37%, rgba(255,0,0,0) 100%);
     border-radius: 25px;
 }
 .blgo__info{
@@ -558,4 +558,89 @@ body{
     font-weight: 500;
     font-size: 0.8em;
     z-index: 2;
+}
+.footer{
+    height: 50%;
+    width: 100%;
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.footer__main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex: 3;
+    padding-right: 60px;
+}
+.footer__main > div{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 10px;
+}
+.footer__main > div > p{
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #00E6B5;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    border-bottom: #e2e2e2 solid 2px;
+    width: 100%;
+}
+.footer__main >div > div > p {
+    color: #003268;
+    font-weight: 400;
+    margin: 15px 0;
+    line-height: 27px;
+}
+.footer__input{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 2;
+}
+.footer__input > input{
+    width: 60%;
+    height: 60px;
+    background-color: #FDFDFD;
+    border: 2px solid #dadada;
+    outline: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    color: #979797;
+    padding: 0 45px;
+    background: url(images/svg/email.png);
+    background-position: 7% 50%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    margin: 0 20px;
+}
+.footer__input > button{
+    font-weight: bold;
+    font-size: 1.05em;
+    height: 60px;
+    width: 110px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #00E6B5;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    background-color: #F2F2F2;
+    color: #1B87CA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
