@@ -6,6 +6,7 @@
     <title>corona</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="container">
       <nav class="navbar">
@@ -141,87 +142,262 @@
       </div>
       <div class="orders">
         <div class="orders__head">
-            <p>Orders Country</p>
-            <button>Filter</button>
+          <p>Orders Country</p>
+          <button>Filter</button>
         </div>
         <div class="orders__main">
-            <table>
-                <tr class="table__head">
-                    <th style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=p9jKUHLk5ejE&format=png&color=000000"><p>&nbsp country</p></th>
-                    <th>Total Cases</th>
-                    <th>Death</th>
-                    <th>Recovered</th>
-                    <th style="padding-right: 50px;">RANK</th>
-                    <th >TRACKING</th>
-                    <th></th>
-                </tr>
-                <tr class="table__data">
-                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=aRiu1GGi6Aoe&format=png&color=000000"><p>&nbsp USA</p></td>
-                    <td>10,637,456</td>
-                    <td>2,767,658</td>
-                    <td>8,647,748</td>
-                    <td>1</td>
-                    <td>IN332942</td>
-                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
-                </tr>
-                <tr class="table__data">
-                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=Ej50Oe3crXwF&format=png&color=000000"><p>&nbsp China</p></td>
-                    <td>8,653,456</td>
-                    <td>2,343,876</td>
-                    <td>6,211,876</td>
-                    <td>2</td>
-                    <td>IN332942</td>
-                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
-                </tr>
-                <tr class="table__data">
-                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=esGVrxg9VCJ1&format=png&color=000000"><p>&nbsp India</p></td>
-                    <td>4,672,737</td>
-                    <td>1,735,335</td>
-                    <td>3,765,342</td>
-                    <td>3</td>
-                    <td>IN332942</td>
-                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
-                </tr>
-                <tr class="table__data">
-                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=zHmH8HpOmM90&format=png&color=000000"><p>&nbsp Brazil</p></td>
-                    <td>2,523,453</td>
-                    <td>1,345,435</td>
-                    <td>1,853,252</td>
-                    <td>4</td>
-                    <td>IN332942</td>
-                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
-                </tr>
-                <tr class="table__data">
-                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=aFEiFfDodGwe&format=png&color=000000"><p>&nbsp Argentina</p></td>
-                    <td>2,221,533</td>
-                    <td>1,235,533</td>
-                    <td>1,545,781</td>
-                    <td>5</td>
-                    <td>IN332942</td>
-                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
-                </tr>
-                <tr class="table__data">
-                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=-Drj05EcgTim&format=png&color=000000"><p>&nbsp Iran</p></td>
-                    <td>1,763,872</td>
-                    <td>1,129,871</td>
-                    <td>1,155,813</td>
-                    <td>6</td>
-                    <td>IN332942</td>
-                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
-                </tr>
-                <tr class="table__data">
-                    <td style="display: flex; align-items: center;"><img src="https://img.icons8.com/?size=100&id=cYRU7TBWwNVs&format=png&color=000000"><p>&nbsp Canada</p></td>
-                    <td>1,234,123</td>
-                    <td>1.110.785</td>
-                    <td>1,876,121</td>
-                    <td>7</td>
-                    <td>IN332942</td>
-                    <td><img src="https://img.icons8.com/?size=100&id=84119&format=png&color=000000" alt=""></td>
-                </tr>
-            </table>
+          <table>
+            <tr class="table__head">
+              <th style="display: flex; align-items: center">
+                <img
+                  src="images/svg/tick.svg"
+                />
+                <p>&nbsp country</p>
+              </th>
+              <th>Total Cases</th>
+              <th>Death</th>
+              <th>Recovered</th>
+              <th style="padding-right: 50px">RANK</th>
+              <th>TRACKING</th>
+              <th></th>
+            </tr>
+            <tr class="table__data">
+              <td style="display: flex; align-items: center">
+                <img
+                  src="images/svg/usa.png"
+                />
+                <p>&nbsp USA</p>
+              </td>
+              <td>10,637,456</td>
+              <td>2,767,658</td>
+              <td>8,647,748</td>
+              <td>1</td>
+              <td>IN332942</td>
+              <td>
+                <img
+                  src="images/svg/menu.png"
+                />
+              </td>
+            </tr>
+            <tr class="table__data">
+              <td style="display: flex; align-items: center">
+                <img
+                  src="images/svg/china.png"
+                />
+                <p>&nbsp China</p>
+              </td>
+              <td>8,653,456</td>
+              <td>2,343,876</td>
+              <td>6,211,876</td>
+              <td>2</td>
+              <td>IN332942</td>
+              <td>
+                <img
+                  src="images/svg/menu.png"
+                />
+              </td>
+            </tr>
+            <tr class="table__data">
+              <td style="display: flex; align-items: center">
+                <img
+                  src="images/svg/india.png"
+                />
+                <p>&nbsp India</p>
+              </td>
+              <td>4,672,737</td>
+              <td>1,735,335</td>
+              <td>3,765,342</td>
+              <td>3</td>
+              <td>IN332942</td>
+              <td>
+                <img
+                  src="images/svg/menu.png"
+                  alt=""
+                />
+              </td>
+            </tr>
+            <tr class="table__data">
+              <td style="display: flex; align-items: center">
+                <img
+                  src="images/svg/brazil.png"
+                />
+                <p>&nbsp Brazil</p>
+              </td>
+              <td>2,523,453</td>
+              <td>1,345,435</td>
+              <td>1,853,252</td>
+              <td>4</td>
+              <td>IN332942</td>
+              <td>
+                <img
+                  src="images/svg/menu.png"
+                  alt=""
+                />
+              </td>
+            </tr>
+            <tr class="table__data">
+              <td style="display: flex; align-items: center">
+                <img
+                  src="images/svg/argentina.png"
+                />
+                <p>&nbsp Argentina</p>
+              </td>
+              <td>2,221,533</td>
+              <td>1,235,533</td>
+              <td>1,545,781</td>
+              <td>5</td>
+              <td>IN332942</td>
+              <td>
+                <img
+                  src="images/svg/menu.png"
+                  alt=""
+                />
+              </td>
+            </tr>
+            <tr class="table__data">
+              <td style="display: flex; align-items: center">
+                <img
+                  src="images/svg/iran.png"
+                />
+                <p>&nbsp Iran</p>
+              </td>
+              <td>1,763,872</td>
+              <td>1,129,871</td>
+              <td>1,155,813</td>
+              <td>6</td>
+              <td>IN332942</td>
+              <td>
+                <img
+                  src="images/svg/menu.png"
+                  alt=""
+                />
+              </td>
+            </tr>
+            <tr class="table__data">
+              <td style="display: flex; align-items: center">
+                <img
+                  src="images/svg/canada.png"
+                />
+                <p>&nbsp Canada</p>
+              </td>
+              <td>1,234,123</td>
+              <td>1.110.785</td>
+              <td>1,876,121</td>
+              <td>7</td>
+              <td>IN332942</td>
+              <td>
+                <img
+                  src="images/svg/menu.png"
+                  alt=""
+                />
+              </td>
+            </tr>
+          </table>
         </div>
         <div class="orders__foot">
-            <button>See More</button>
+          <button>See More</button>
+        </div>
+      </div>
+      <div class="blog">
+        <p>BLOG</p>
+        <div class="blog__grid">
+          <div class="square-one"></div>
+          <div class="square-two"></div>
+          <div class="blog__part1">
+            <div class="blog__info">
+              <div class="blog__part__topic">
+                <div></div>
+                <p>10 Dangerous diseases Lorem spam</p>
+              </div>
+              <div class="blog__part__data">
+                <div>
+                  <img src="images/svg/datewhite.png" />
+                  <p>2022/6/21</p>
+                </div>
+                <div>
+                  <img src="images/svg/person.png" />
+                  <p>Arman solaymani</p>
+                </div>
+              </div>
+            </div>
+            <div class="blog__part__shadow"></div>
+          </div>
+          <div class="blog__part2">
+            <div class="blog__info">
+              <div class="blog__part__topic">
+                <div></div>
+                <p>10 Dangerous diseases Lorem spam</p>
+              </div>
+              <div class="blog__part__data">
+                <div>
+                  <img src="images/svg/datewhite.png" />
+                  <p>2022/6/21</p>
+                </div>
+                <div>
+                  <img src="images/svg/person.png" />
+                  <p>Arman solaymani</p>
+                </div>
+              </div>
+            </div>
+            <div class="blog__part__shadow"></div>
+          </div>
+          <div class="blog__part3">
+            <div class="blog__info">
+              <div class="blog__part__topic">
+                <div></div>
+                <p>10 Dangerous diseases Lorem spam</p>
+              </div>
+              <div class="blog__part__data">
+                <div>
+                  <img src="images/svg/datewhite.png" />
+                  <p>2022/6/21</p>
+                </div>
+                <div>
+                  <img src="images/svg/person.png" />
+                  <p>Arman solaymani</p>
+                </div>
+              </div>
+            </div>
+            <div class="blog__part__shadow"></div>
+          </div>
+          <div class="blog__part4">
+            <div class="blog__info">
+              <div class="blog__part__topic">
+                <div></div>
+                <p>10 Dangerous diseases Lorem spam</p>
+              </div>
+              <div class="blog__part__data">
+                <div>
+                  <img src="images/svg/datewhite.png" />
+                  <p>2022/6/21</p>
+                </div>
+                <div>
+                  <img src="images/svg/person.png" />
+                  <p>Arman solaymani</p>
+                </div>
+              </div>
+            </div>
+            <div class="blog__part__shadow"></div>
+          </div>
+          <div class="blog__part5">
+            <div class="blog__info">
+              <div class="blog__part__topic">
+                <div></div>
+                <p>10 Dangerous diseases Lorem spam</p>
+              </div>
+              <div class="blog__part__data">
+                <div>
+                  <img src="images/svg/datewhite.png" />
+                  <p>2022/6/21</p>
+                </div>
+                <div>
+                  <img src="images/svg/person.png" />
+                  <p>Arman solaymani</p>
+                </div>
+              </div>
+            </div>
+            <div class="blog__part__shadow"></div>
+          </div>
         </div>
       </div>
     </div>
