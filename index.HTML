@@ -9,16 +9,19 @@
 
   <body>
     <div class="container">
+      <!-- ............................................. navbar -->
       <nav class="navbar">
         <p class="navbar__logo">LOGO</p>
         <div class="navbar__menu">
           <div>Home</div>
           <div>Servies</div>
-          <div>Question & Answers</div>
+          <div class="menu__qa__large">Question & Answers</div>
+          <div class="menu__qa__small">Q & A</div>
           <div>About us</div>
         </div>
         <button class="navbar__btn">Get start</button>
       </nav>
+      <!-- ............................................. main -->
       <main class="main">
         <div class="main__text">
           <div class="text__top">
@@ -39,13 +42,14 @@
           <img class="img__doctor" src="/images/covid-image.png" alt="doctor" />
         </div>
       </main>
+      <!-- ............................................. statistics -->
       <div class="statistics">
         <p class="statistics__topic">STATISTICS</p>
         <div class="statistics__grid">
           <div class="grid__selector">
             <select name="country" id="country__select">
-              <option value="canada">🇨🇦 &nbsp &nbsp Canada</option>
-              <option value="america">🇺🇸 &nbsp &nbsp USA</option>
+              <option value="canada">🇨🇦 &nbsp Canada</option>
+              <option value="america">🇺🇸 &nbsp USA</option>
             </select>
             <select aria-hidden="true" name="date" id="date__select">
               <option value="">Date</option>
@@ -101,6 +105,7 @@
           </div>
         </div>
       </div>
+      <!-- ............................................. chart -->
       <div class="chart">
         <p>CHART</p>
 
@@ -140,6 +145,7 @@
           </div>
         </div>
       </div>
+      <!-- ............................................. orders -->
       <div class="orders">
         <div class="orders__head">
           <p>Orders Country</p>
@@ -154,12 +160,12 @@
                 />
                 <p>&nbsp country</p>
               </th>
-              <th>Total Cases</th>
+              <th class="table__total">Total Cases</th>
               <th>Death</th>
-              <th>Recovered</th>
-              <th style="padding-right: 50px">RANK</th>
-              <th>TRACKING</th>
-              <th></th>
+              <th class="table__recover">Recovered</th>
+              <th class="table__rank" >RANK</th>
+              <th class="table__tracking">TRACKING</th>
+              <th class="table__menu"></th>
             </tr>
             <tr class="table__data">
               <td style="display: flex; align-items: center">
@@ -168,12 +174,12 @@
                 />
                 <p>&nbsp USA</p>
               </td>
-              <td>10,637,456</td>
+              <td class="table__total">10,637,456</td>
               <td>2,767,658</td>
-              <td>8,647,748</td>
-              <td>1</td>
-              <td>IN332942</td>
-              <td>
+              <td class="table__recover">8,647,748</td>
+              <td class="table__rank">1</td>
+              <td class="table__tracking">IN332942</td>
+              <td class="table__menu">
                 <img
                   src="images/svg/menu.png"
                 />
@@ -186,12 +192,12 @@
                 />
                 <p>&nbsp China</p>
               </td>
-              <td>8,653,456</td>
+              <td class="table__total">8,653,456</td>
               <td>2,343,876</td>
-              <td>6,211,876</td>
-              <td>2</td>
-              <td>IN332942</td>
-              <td>
+              <td class="table__recover">6,211,876</td>
+              <td class="table__rank">2</td>
+              <td class="table__tracking">IN332942</td>
+              <td class="table__menu">
                 <img
                   src="images/svg/menu.png"
                 />
@@ -204,12 +210,12 @@
                 />
                 <p>&nbsp India</p>
               </td>
-              <td>4,672,737</td>
+              <td class="table__total">4,672,737</td>
               <td>1,735,335</td>
-              <td>3,765,342</td>
-              <td>3</td>
-              <td>IN332942</td>
-              <td>
+              <td class="table__recover">3,765,342</td>
+              <td class="table__rank">3</td>
+              <td class="table__tracking">IN332942</td>
+              <td class="table__menu">
                 <img
                   src="images/svg/menu.png"
                   alt=""
@@ -223,12 +229,12 @@
                 />
                 <p>&nbsp Brazil</p>
               </td>
-              <td>2,523,453</td>
+              <td class="table__total">2,523,453</td>
               <td>1,345,435</td>
-              <td>1,853,252</td>
-              <td>4</td>
-              <td>IN332942</td>
-              <td>
+              <td class="table__recover">1,853,252</td>
+              <td class="table__rank">4</td>
+              <td class="table__tracking">IN332942</td>
+              <td class="table__menu">
                 <img
                   src="images/svg/menu.png"
                   alt=""
@@ -242,12 +248,12 @@
                 />
                 <p>&nbsp Argentina</p>
               </td>
-              <td>2,221,533</td>
+              <td class="table__total">2,221,533</td>
               <td>1,235,533</td>
-              <td>1,545,781</td>
-              <td>5</td>
-              <td>IN332942</td>
-              <td>
+              <td class="table__recover">1,545,781</td>
+              <td class="table__rank">5</td>
+              <td class="table__tracking">IN332942</td>
+              <td class="table__menu">
                 <img
                   src="images/svg/menu.png"
                   alt=""
@@ -261,12 +267,12 @@
                 />
                 <p>&nbsp Iran</p>
               </td>
-              <td>1,763,872</td>
+              <td class="table__total">1,763,872</td>
               <td>1,129,871</td>
-              <td>1,155,813</td>
-              <td>6</td>
-              <td>IN332942</td>
-              <td>
+              <td class="table__recover">1,155,813</td>
+              <td class="table__rank">6</td>
+              <td class="table__tracking">IN332942</td>
+              <td class="table__menu">
                 <img
                   src="images/svg/menu.png"
                   alt=""
@@ -280,12 +286,12 @@
                 />
                 <p>&nbsp Canada</p>
               </td>
-              <td>1,234,123</td>
+              <td class="table__total">1,234,123</td>
               <td>1.110.785</td>
-              <td>1,876,121</td>
-              <td>7</td>
-              <td>IN332942</td>
-              <td>
+              <td class="table__recover">1,876,121</td>
+              <td class="table__rank">7</td>
+              <td class="table__tracking">IN332942</td>
+              <td class="table__menu">
                 <img
                   src="images/svg/menu.png"
                   alt=""
@@ -298,6 +304,7 @@
           <button>See More</button>
         </div>
       </div>
+      <!-- ............................................. blog -->
       <div class="blog">
         <p>BLOG</p>
         <div class="blog__grid">
@@ -400,6 +407,7 @@
           </div>
         </div>
       </div>
+      <!-- ............................................. footer -->
       <div class="footer">
         <div class="footer__main">
           <div>
@@ -427,3 +435,4 @@
       <div class="copyright">copy right @2022</div>
   </body>
 </html>
+
