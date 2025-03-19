@@ -10,6 +10,7 @@ body{
     direction: ltr;
     font-family: 'Roboto', Courier, monospace;
     font-size: 16px;
+    cursor: default;
 }
 .container{
     padding: 0 130px;
@@ -32,6 +33,12 @@ body{
     gap: 30px;
     font-family: sans-serif;
 }
+.navbar__menu>div{
+    transition:all 0.2s ease ;
+}
+.navbar__menu > div:hover{
+    transform: scale(1.03);
+}
 .navbar > div{
     cursor: pointer;
 }
@@ -45,6 +52,10 @@ body{
     color: white;
     background-color: #00E6B5;
     cursor: pointer;
+    transition:all 0.2s ease ;
+}
+.navbar__btn:hover{
+    transform: scale(1.025);
 }
 .menu__qa__small{
     display: none;
@@ -111,6 +122,10 @@ body{
     font-weight: bolder;
     font-size: 1.05em;
     border-radius: 50px;
+    transition: all 0.2s ease;
+}
+.text__btns > button:hover{
+    transform: scale(1.025);
 }
 .btns__one{
     outline: none;
@@ -170,6 +185,7 @@ body{
     background-repeat: no-repeat;
     background-size: 20px 20px;
     margin: 0 5px;
+    cursor: pointer;
 }
 #date__select{
     background-image: url(images/svg/date.svg) , url(images/svg/arrow.svg);
@@ -190,6 +206,11 @@ body{
     background-color: #00E6B5;
     color: #FDFDFD;
     margin: 0 5px;
+    transition:all 0.2s ease ;
+}
+
+.selector__btn:hover{
+    transform: scale(1.025);
 }
 .grid__today-statistics{
     grid-column: 4/6;
@@ -348,6 +369,10 @@ body{
     color: white;
     background-color: #00E6B5;
     cursor: pointer;
+    transition:all 0.2s ease ;
+}
+.orders__head>button:hover{
+    transform: scale(1.025);
 }
 .orders__main{
     width: 100%;
@@ -359,6 +384,12 @@ body{
 }
 .table__rank{
     padding-right: 50px !important;
+}
+.table__menu{
+    transition:all 0.2s ease ;
+}
+.table__menu:hover{
+    transform: scale(1.1);
 }
 .table__head{
     border-bottom: #ebebebe0 solid 1px;
@@ -404,6 +435,10 @@ body{
     color: white;
     background-color: #00E6B5;
     cursor: pointer;
+    transition:all 0.2s ease ;
+}
+.orders__foot>button:hover{
+    transform: scale(1.025);
 }
 /* .......................................................  blog */
 .blog{
@@ -462,6 +497,10 @@ body{
     background-size: 100% 100%;
     border-radius: 25px;
     position: relative;
+    transition: all 0.2s ease;
+}
+.blog__part1:hover{
+    transform: scale(1.01);
 }
 .blog__part2{
     display:flex;
@@ -475,6 +514,10 @@ body{
     background-size: 100% 100%;
     border-radius: 25px;
     position: relative;
+    transition: all 0.2s ease;
+}
+.blog__part2:hover{
+    transform: scale(1.01);
 }
 .blog__part3{
     display:flex;
@@ -488,6 +531,10 @@ body{
     background-size: 100% 100%;
     border-radius: 25px;
     position: relative;
+    transition: all 0.2s ease;
+}
+.blog__part3:hover{
+    transform: scale(1.01);
 }
 .blog__part4{
     display:flex;
@@ -501,6 +548,10 @@ body{
     background-size: 100% 100%;
     border-radius: 25px;
     position: relative;
+    transition: all 0.2s ease;
+}
+.blog__part4:hover{
+    transform: scale(1.01);
 }
 .blog__part5{
     display:flex;
@@ -514,6 +565,10 @@ body{
     background-size: 100% 100%;
     border-radius: 25px;
     position: relative;
+    transition: all 0.2s ease;
+}
+.blog__part5:hover{
+    transform: scale(1.01);
 }
 .blog__part__shadow{
     position: absolute;
@@ -522,8 +577,9 @@ body{
     bottom: 0;
     z-index: 0;
     background: rgb(25,25,25);
-    background: linear-gradient(360deg, rgba(25,25,25,1) 0%, rgba(80,80,80,0.5942752100840336) 37%, rgba(255,0,0,0) 100%);
+    background: linear-gradient(360deg, rgb(19, 19, 19) 0%, rgba(80,80,80,0.5942752100840336) 45%, rgba(255,0,0,0) 100%);
     border-radius: 25px;
+    cursor: pointer;
 }
 .blgo__info{
     display: flex;
@@ -536,6 +592,7 @@ body{
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    cursor: pointer;
 }
 .blog__part__topic > div{
     width: 6px;
@@ -556,6 +613,7 @@ body{
     justify-content: start;
     align-items: center;
     margin-left: 20px;
+    cursor: pointer;
 }
 .blog__part__data>div{
     display: flex;
@@ -650,6 +708,11 @@ body{
     color: white;
     background-color: #00E6B5;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.footer__input>button:hover{
+    transform: scale(1.025);
 }
 .copyright{
     width: 100%;
