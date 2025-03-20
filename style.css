@@ -55,7 +55,7 @@ body{
     transition:all 0.2s ease ;
 }
 .navbar__btn:hover{
-    transform: scale(1.025);
+    transform: scale(1.03);
 }
 .menu__qa__small{
     display: none;
@@ -125,7 +125,7 @@ body{
     transition: all 0.2s ease;
 }
 .text__btns > button:hover{
-    transform: scale(1.025);
+    transform: scale(1.03);
 }
 .btns__one{
     outline: none;
@@ -210,7 +210,7 @@ body{
 }
 
 .selector__btn:hover{
-    transform: scale(1.025);
+    transform: scale(1.03);
 }
 .grid__today-statistics{
     grid-column: 4/6;
@@ -372,7 +372,7 @@ body{
     transition:all 0.2s ease ;
 }
 .orders__head>button:hover{
-    transform: scale(1.025);
+    transform: scale(1.03);
 }
 .orders__main{
     width: 100%;
@@ -428,7 +428,7 @@ body{
 .orders__foot > button{
     font-weight: bold;
     font-size: 1.05em;
-    padding: 13px 30px;
+    padding: 14px 30px;
     border-radius: 50px;
     outline: none;
     border: none;
@@ -438,7 +438,7 @@ body{
     transition:all 0.2s ease ;
 }
 .orders__foot>button:hover{
-    transform: scale(1.025);
+    transform: scale(1.03);
 }
 /* .......................................................  blog */
 .blog{
@@ -568,7 +568,7 @@ body{
     transition: all 0.2s ease;
 }
 .blog__part5:hover{
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 .blog__part__shadow{
     position: absolute;
@@ -712,7 +712,7 @@ body{
 }
 
 .footer__input>button:hover{
-    transform: scale(1.025);
+    transform: scale(1.03);
 }
 .copyright{
     width: 100%;
