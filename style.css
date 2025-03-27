@@ -811,11 +811,11 @@ body{
     .blog{
         margin-top: 100px;
     }
-    .grid-today-statistics{
-        display: none;
-    }
     .statistics-grid{
         grid-template-columns: repeat(3,1fr);
+    }
+    .grid-today-statistics{
+        padding-left: 30px;
     }
     .chart-data{
         gap: 10px;
@@ -866,9 +866,6 @@ body{
     .footer-input>input{
         padding-left: 45px;
     }
-    .table-tracking{
-        display: none;
-    }
     .table-rank{
         padding-right: 0 !important;
     }
@@ -887,17 +884,20 @@ body{
     .main-text{
         min-width: 400px;
     }
-    .table-menu{
-        display: none;
+    .grid-today-statistics{
+        padding-left: 10px;
     }
-    .table-total{
-        display: none;
+    .statistics-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 50px;
     }
-  }
-
-  @media screen and (max-width: 500px ){
     .grid-selector{
         flex-direction: column;
+        width: 100%;
     }
     .grid-selector>select{
         width: 70%;
@@ -907,6 +907,9 @@ body{
         width: 200px;
         margin: 5px 0;
     }
+    .grid-today-statistics{
+        padding: 0;
+    }
     .grid-info{
         flex-wrap: wrap;
     }
@@ -915,7 +918,17 @@ body{
     }
     .chart-data{
         flex-direction: column;
+        gap: 30px;
     }
+    .orders-main{
+        overflow-x: scroll;
+    }
+    .orders-main> table{
+        width: 700px;
+    }
+  }
+
+  @media screen and (max-width: 500px ){
     .blog-grid{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6 , 1fr);
@@ -981,12 +994,6 @@ body{
         display: block;
     }
     .menu-qa-large{
-        display: none;
-    }
-    .table-rank{
-        text-align: center;
-    }
-    .table-recover{
         display: none;
     }
     .grid-selector>select{
