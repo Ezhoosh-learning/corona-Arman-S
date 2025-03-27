@@ -758,13 +758,17 @@ body{
         padding: 0 50px;
     }
     .main{
+        flex-direction: column-reverse;
         justify-content: center;
+    }
+    .img__doctor{
+        width: 60%;
+        margin-top: 40px;
     }
     .main__text{
         align-items: center;
-    }
-    .main__img{
-        display: none;
+        margin-top: 10px;
+        margin-bottom: 60px;
     }
     .text__btns{
         width: 100%;
@@ -951,6 +955,9 @@ body{
     .main__text{
         min-width: 280px;
     }
+    .img__doctor{
+        width: 80%;
+    }
     .text__top{
         font-size: 2.1em;
     }
@@ -981,5 +988,8 @@ body{
     }
     .table__recover{
         display: none;
+    }
+    .grid__selector>select{
+        width: 90%;
     }
 }
