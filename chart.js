@@ -18,7 +18,6 @@ const ctxR = document.getElementById('myChartRed');
             yValuesG.push(i.data["recovered"])
             yValuesR.push(i.data["deaths"])
         })
-        console.log(yValuesG , yValuesR);
     }).then(()=>{
         new Chart(ctxG, {
             type: "line",
