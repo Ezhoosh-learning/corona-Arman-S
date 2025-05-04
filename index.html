@@ -8,6 +8,9 @@
   </head>
 
   <body>
+      <div id="loading">
+        <span class="loader"></span>
+      </div>
     <div class="container">
       <nav class="navbar">
         <p class="navbar-logo">LOGO</p>
@@ -45,56 +48,65 @@
         <div class="statistics-grid">
           <div class="grid-selector">
             <select name="country" id="country-select">
-              <option value="canada">🇨🇦 &nbsp Canada</option>
-              <option value="america">🇺🇸 &nbsp USA</option>
+              <option value="CAN">🇨🇦 &nbsp Canada</option>
+              <option value="USA">🇺🇸 &nbsp USA</option>
+              <option value="CHN">🇨🇳 &nbsp China</option>
+              <option value="BRA">🇧🇷 &nbsp Brazil</option>
+              <option value="FRA">🇫🇷 &nbsp France</option>
+              <option value="DEU">🇩🇪 &nbsp Germany</option>
+              <option value="IND">🇮🇳 &nbsp India</option>
+              <option value="ITA">🇮🇹 &nbsp Italy</option>
+
             </select>
             <select aria-hidden="true" name="date" id="date-select">
-              <option value="">Date</option>
-              <option value="2023">2023</option>
-              <option value="2022">2022</option>
-              <option value="2021">2021</option>
-              <option value="2020">2020</option>
+              <option value="default">Date</option>
+              <option value="2023-01-01">2023-01-01</option>
+              <option value="2022-06-01">2022-06-01</option>
+              <option value="2022-01-01">2022-01-01</option>
+              <option value="2021-06-01">2021-06-01</option>
+              <option value="2021-01-01">2021-01-01</option>
+              <option value="2020-06-01">2020-06-01</option>
             </select>
             <button class="selector-btn">Filter</button>
           </div>
           <div class="grid-info">
             <div>
-              <p class="--blue">14</p>
+              <p class="--blue" id="rank">14</p>
               <p class="--green">Ranks</p>
             </div>
             <div>
-              <p class="--blue">12,456</p>
+              <p class="--blue" id="total">12,456</p>
               <p class="--green">Total Cases</p>
             </div>
             <div>
-              <p class="--gold">836</p>
+              <p class="--gold" id="death">836</p>
               <p class="--green">Death</p>
             </div>
             <div>
-              <p class="--blue">12,456</p>
+              <p class="--blue recover">12,456</p>
               <p class="--green">Recovered</p>
             </div>
             <div>
-              <p class="--blue">12,465</p>
+              <p class="--blue recover">12,465</p>
               <p class="--green">Recovered</p>
             </div>
           </div><div class="grid-today-statistics">
             <p>TODAY STATISTICS</p>
             <div class="today-statistics-info">
               <div class="today-statistics-info-1">
-                <p class="--darkblue">2,464</p>
+                <p class="--darkblue" id="statistics-total">2,464</p>
                 <p class="--green">Total Cases</p>
               </div>
               <div class="today-statistics-info-2">
-                <p class="--green">981</p>
+                <p class="--green" id="statistics-recover">981</p>
                 <p class="--green">Recovered</p>
               </div>
               <div class="today-statistics-info-3">
-                <p class="--darkblue">1,643</p>
+                <p class="--darkblue"id="statistics-infect">1,643</p>
                 <p class="--green">Infected Now</p>
               </div>
               <div class="today-statistics-info-4">
-                <p class="--gold">542</p>
+                <p class="--gold" id="statistics-death">542</p>
                 <p class="--green">Deaths</p>
               </div>
             </div>
@@ -393,5 +405,6 @@
       </div>
     </div>
     <div class="copyright">copy right @2022</div>
+    <script src="./app.js"></script>
   </body>
 </html>
