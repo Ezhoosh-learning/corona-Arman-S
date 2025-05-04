@@ -48,6 +48,7 @@
         <div class="statistics-grid">
           <div class="grid-selector">
             <select name="country" id="country-select">
+              <option value="default">⚐ &nbsp select country</option>
               <option value="CAN">🇨🇦 &nbsp Canada</option>
               <option value="USA">🇺🇸 &nbsp USA</option>
               <option value="CHN">🇨🇳 &nbsp China</option>
@@ -71,42 +72,38 @@
           </div>
           <div class="grid-info">
             <div>
-              <p class="--blue" id="rank">14</p>
-              <p class="--green">Ranks</p>
-            </div>
-            <div>
-              <p class="--blue" id="total">12,456</p>
+              <p class="--blue" id="total">0</p>
               <p class="--green">Total Cases</p>
             </div>
             <div>
-              <p class="--gold" id="death">836</p>
+              <p class="--gold" id="death">0</p>
               <p class="--green">Death</p>
             </div>
             <div>
-              <p class="--blue recover">12,456</p>
+              <p class="--blue recover">0</p>
               <p class="--green">Recovered</p>
             </div>
             <div>
-              <p class="--blue recover">12,465</p>
+              <p class="--blue recover">0</p>
               <p class="--green">Recovered</p>
             </div>
           </div><div class="grid-today-statistics">
             <p>TODAY STATISTICS</p>
             <div class="today-statistics-info">
               <div class="today-statistics-info-1">
-                <p class="--darkblue" id="statistics-total">2,464</p>
+                <p class="--darkblue" id="statistics-total">0</p>
                 <p class="--green">Total Cases</p>
               </div>
               <div class="today-statistics-info-2">
-                <p class="--green" id="statistics-recover">981</p>
+                <p class="--green" id="statistics-recover">0</p>
                 <p class="--green">Recovered</p>
               </div>
               <div class="today-statistics-info-3">
-                <p class="--darkblue"id="statistics-infect">1,643</p>
+                <p class="--darkblue"id="statistics-infect">0</p>
                 <p class="--green">Infected Now</p>
               </div>
               <div class="today-statistics-info-4">
-                <p class="--gold" id="statistics-death">542</p>
+                <p class="--gold" id="statistics-death">0</p>
                 <p class="--green">Deaths</p>
               </div>
             </div>
@@ -120,32 +117,32 @@
           <div class="data-graph">
             <p>TOTAL CASES</p>
             <div>
-              <img src="assets/images/Chart Title green.png" alt="" />
+              <canvas id="myChartGreen"></canvas>
             </div>
           </div>
           <div class="data-graph">
             <p>TOTAL CASES</p>
             <div>
-              <img src="assets/images/Chart Title red.png" alt="" />
+              <canvas id="myChartRed"></canvas>
             </div>
           </div>
           <div class="worldwide grid-today-statistics">
             <p class="">WORLDWIDE STATISTICS</p>
             <div class="today-statistics-info">
               <div class="today-statistics-info-1">
-                <p class="--darkblue">2,464</p>
+                <p class="--darkblue" id="world-total">0</p>
                 <p class="--green">Total Cases</p>
               </div>
               <div class="today-statistics-info-2">
-                <p class="--green">981</p>
+                <p class="--green" id="world-recover">0</p>
                 <p class="--green">Recovered</p>
               </div>
               <div class="today-statistics-info-3">
-                <p class="--darkblue">1,643</p>
+                <p class="--darkblue" id="world-infect">0</p>
                 <p class="--green">Infected Now</p>
               </div>
               <div class="today-statistics-info-4">
-                <p class="--gold">542</p>
+                <p class="--gold" id="world-death">0</p>
                 <p class="--green">Deaths</p>
               </div>
             </div>
@@ -406,5 +403,7 @@
     </div>
     <div class="copyright">copy right @2022</div>
     <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="chart.js"></script>
   </body>
 </html>
