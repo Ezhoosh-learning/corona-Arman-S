@@ -4,6 +4,15 @@ let xValuesR = ["2020-06" , "2020-07" ,"2020-08" ,"2020-09" ,"2020-10"];;
 let yValuesR = [];
 const ctxG = document.getElementById('myChartGreen');
 const ctxR = document.getElementById('myChartRed');
+const load = document.getElementById('loading')
+
+function isloading(bol){
+  if(bol){
+      load.style.display = "flex"
+  }else if(!bol){
+      load.style.display = "none"
+  }
+}
 
 (function(){
     isloading(true)

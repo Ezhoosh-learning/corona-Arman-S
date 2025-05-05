@@ -49,15 +49,6 @@
           <div class="grid-selector">
             <select name="country" id="country-select">
               <option value="default">⚐ &nbsp select country</option>
-              <option value="CAN">🇨🇦 &nbsp Canada</option>
-              <option value="USA">🇺🇸 &nbsp USA</option>
-              <option value="CHN">🇨🇳 &nbsp China</option>
-              <option value="BRA">🇧🇷 &nbsp Brazil</option>
-              <option value="FRA">🇫🇷 &nbsp France</option>
-              <option value="DEU">🇩🇪 &nbsp Germany</option>
-              <option value="IND">🇮🇳 &nbsp India</option>
-              <option value="ITA">🇮🇹 &nbsp Italy</option>
-
             </select>
             <select aria-hidden="true" name="date" id="date-select">
               <option value="default">Date</option>
@@ -118,13 +109,13 @@
 
         <div class="chart-data">
           <div class="data-graph">
-            <p>TOTAL CASES</p>
+            <p>RECOVERED</p>
             <div>
               <canvas id="myChartGreen" style="height: auto; width: 100%;"></canvas>
             </div>
           </div>
           <div class="data-graph">
-            <p>TOTAL CASES</p>
+            <p>DEATHS</p>
             <div>
               <canvas id="myChartRed" style="height: auto; width: 100%;"></canvas>
             </div>
@@ -310,7 +301,7 @@
       </div>
     </div>
     <div class="copyright">copy right @2022</div>
-    <script src="./app.js"></script>
+    <script src="./app.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="chart.js"></script>
   </body>

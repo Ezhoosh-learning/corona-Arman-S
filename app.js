@@ -1,3 +1,5 @@
+import * as coun from "./country_icon.json" with { type : 'json'}
+
 const API = "https://covid-api.com/api/" ;
 
 const API_HEALTH = "https://saurav.tech/NewsAPI/top-headlines/category/health/in.json";
@@ -136,6 +138,19 @@ const btn_loader_text = document.getElementById('btn-loader-text');
           return HTML_BLOG
     }).then(html =>{
         blog_grid.insertAdjacentHTML("beforeend" , html)
+    }),
+    fetch(API + "regions?per_page=50&").then(res => res.json())
+    .then(res => {
+      res.data.map(item =>{
+        let flag = coun.default.filter(elm =>{
+          const regex = new RegExp(`${item.iso.slice(0,1)}(${item.iso.slice(1,2)}|${item.iso.slice(2,3)})`);
+          return (elm.code.match(regex) && elm.name == item.name)
+        })
+        if(flag[0] != undefined){
+          const option_html= `<option value="${item.iso}">${flag[0].flag} &nbsp ${item.name}</option>`
+          country_selector.insertAdjacentHTML("beforeend" , option_html) 
+        }
+      })
     })
     ])
 })()
