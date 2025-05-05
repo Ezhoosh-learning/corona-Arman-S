@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #FDFDFD;
+    background-color: #ffffff;
     direction: ltr;
     font-family: 'Roboto', Courier, monospace;
     font-size: 16px;
@@ -204,7 +204,16 @@ body{
     color: #FDFDFD;
     margin: 0 5px;
     transition:all 0.2s ease ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#btn-loader{
+    display: none;
+    width: 30px;
+    height: 30px;
+  }
 
 .selector-btn:hover{
     transform: scale(1.03);
@@ -746,6 +755,7 @@ body{
     inset: 6px;
   }
 
+
   @keyframes rotate {
     0%   {transform: rotate(0deg)}
     100%   {transform: rotate(360deg)}
@@ -783,6 +793,12 @@ body{
     }
     .container{
         padding: 0 70px;
+    }
+    .chart-data{
+        flex-wrap: wrap;
+    }
+    .worldwide{
+        flex-basis: 100%;
     }
     .grid-today-statistics{
         padding-left: 50px ;

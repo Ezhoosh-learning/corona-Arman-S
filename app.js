@@ -18,6 +18,8 @@ const world_recover = document.getElementById('world-recover')
 const world_death = document.getElementById("world-death");
 const world_total = document.getElementById('world-total');
 const blog_grid = document.querySelector(".blog-grid");
+const btn_loader = document.getElementById('btn-loader');
+const btn_loader_text = document.getElementById('btn-loader-text');
 
 
 (function() {
@@ -40,7 +42,7 @@ const blog_grid = document.querySelector(".blog-grid");
             <div class="blog-info">
               <div class="blog-part-topic">
                 <div></div>
-                <a href=${res[0].url}>${res[0].title}</a>
+                <a href=${res[0].url}>${res[0].title.slice(0,50) + "..."}</a>
               </div>
               <div class="blog-part-data">
                 <div>
@@ -49,7 +51,7 @@ const blog_grid = document.querySelector(".blog-grid");
                 </div>
                 <div>
                   <img src="assets/icons/person.png" />
-                  <p>${res[0].author}</p>
+                  <p>${res[0].author || "unknown"}</p>
                 </div>
               </div>
             </div>
@@ -59,7 +61,7 @@ const blog_grid = document.querySelector(".blog-grid");
             <div class="blog-info">
               <div class="blog-part-topic">
                 <div></div>
-                <a href=${res[1].url}>${res[1].title}</a>
+                <a href=${res[1].url}>${res[1].title.slice(0,50) + "..."}</a>
               </div>
               <div class="blog-part-data">
                 <div>
@@ -68,7 +70,7 @@ const blog_grid = document.querySelector(".blog-grid");
                 </div>
                 <div>
                   <img src="assets/icons/person.png" />
-                  <p>${res[1].author}</p>
+                  <p>${res[1].author || "unknown"}</p>
                 </div>
               </div>
             </div>
@@ -78,7 +80,7 @@ const blog_grid = document.querySelector(".blog-grid");
             <div class="blog-info">
               <div class="blog-part-topic">
                 <div></div>
-                <a href=${res[2].url}>${res[2].title}</a>
+                <a href=${res[2].url}>${res[2].title.slice(0,50) + "..."}</a>
               </div>
               <div class="blog-part-data">
                 <div>
@@ -87,7 +89,7 @@ const blog_grid = document.querySelector(".blog-grid");
                 </div>
                 <div>
                   <img src="assets/icons/person.png" />
-                  <p>${res[2].author}</p>
+                  <p>${res[2].author || "unknown"}</p>
                 </div>
               </div>
             </div>
@@ -97,7 +99,7 @@ const blog_grid = document.querySelector(".blog-grid");
             <div class="blog-info">
               <div class="blog-part-topic">
                 <div></div>
-                <a href=${res[3].url}>${res[3].title}</a>
+                <a href=${res[3].url}>${res[3].title.slice(0,50) + "..."}</a>
               </div>
               <div class="blog-part-data">
                 <div>
@@ -106,7 +108,7 @@ const blog_grid = document.querySelector(".blog-grid");
                 </div>
                 <div>
                   <img src="assets/icons/person.png" />
-                  <p>${res[3].author}</p>
+                  <p>${res[3].author || "unknown"}</p>
                 </div>
               </div>
             </div>
@@ -116,7 +118,7 @@ const blog_grid = document.querySelector(".blog-grid");
             <div class="blog-info">
               <div class="blog-part-topic">
                 <div></div>
-                <a href=${res[4].url}>${res[4].title}</a>
+                <a href=${res[4].url}>${res[4].title.slice(0,50) + " ..."}</a>
               </div>
               <div class="blog-part-data">
                 <div>
@@ -125,7 +127,7 @@ const blog_grid = document.querySelector(".blog-grid");
                 </div>
                 <div>
                   <img src="assets/icons/person.png" />
-                  <p>${res[4].author}</p>
+                  <p>${res[4].author || "unknown"}</p>
                 </div>
               </div>
             </div>
@@ -145,7 +147,7 @@ selector_btn.addEventListener("click" , ()=>{
         alert("select country and date")
         return 
     }
-    isloading(true)
+    isloadingbtn(true)
     Promise.all([
      fetch(API+`reports?date=${date_selector.value}&iso=${country_selector.value}&per_page=1`).then(response => response.json())
     .then(response => {
@@ -153,10 +155,10 @@ selector_btn.addEventListener("click" , ()=>{
         death.innerText = response.data[0]["deaths"]
         recover.forEach(item => item.innerText = response.data[0]["recovered"])
     }).then(()=>{
-    isloading(false)
+    isloadingbtn(false)
     }).catch((error)=>{
         console.log("input selector : " ,error);
-        isloading(false)
+        isloadingbtn(false)
     }),
     fetch(API+`reports?iso=${country_selector.value}&per_page=1`).then(response => response.json())
     .then(response =>{
@@ -170,6 +172,17 @@ selector_btn.addEventListener("click" , ()=>{
 
     
 
+function isloadingbtn(bol){
+  if(bol){
+      selector_btn.style.backgroundColor = "gray"
+      btn_loader_text.style.display = "none"
+      btn_loader.style.display = "block"
+  }else if(!bol){
+      selector_btn.style.backgroundColor = "#00E6B5"
+      btn_loader.style.display = "none"
+      btn_loader_text.style.display = "unset"
+  }
+}
 
  function isloading(bol){
     if(bol){
